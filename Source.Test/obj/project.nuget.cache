@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "jzLVlOBobK/23xTRlmDDG/+zq1PbstUVMWF/2yC725/jSf3gLIbX10uP3xWgkakXD6G0d8U0o41inOHT/1G9Qg==",
+  "dgSpecHash": "0jli2AL+RgnXkZBLRlJ2EtQrDPVUpUVcZhl953dlPYc6zHRuGqcGH3EWy8sOL+QR3usYxJ9Auxp8ZsMsuSjRag==",
   "success": true,
   "projectFilePath": "C:\\Users\\HOFFMANN\\codenation\\csharp-7\\Source.Test\\Source.Test.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\HOFFMANN\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\HOFFMANN\\.nuget\\packages\\junittestlogger\\1.1.0\\junittestlogger.1.1.0.nupkg.sha512",
     "C:\\Users\\HOFFMANN\\.nuget\\packages\\microsoft.codecoverage\\16.0.1\\microsoft.codecoverage.16.0.1.nupkg.sha512",
     "C:\\Users\\HOFFMANN\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
