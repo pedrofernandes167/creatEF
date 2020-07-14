@@ -1,5 +1,4 @@
-﻿using Codenation.Challenge.Models;
-using Microsoft.AspNetCore;
+﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 
 namespace Codenation.Challenge
@@ -13,13 +12,6 @@ namespace Codenation.Challenge
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>();
-
-        //using (var acl = new CodenationContext())
-        //{
-        //    var code = new User();
-
-        //}
-    
+                .UseStartup<Startup>();    
     }
 }

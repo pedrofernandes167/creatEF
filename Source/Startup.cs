@@ -1,16 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Codenation.Challenge.Models;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
 
 namespace Codenation.Challenge
 {
@@ -27,7 +19,7 @@ namespace Codenation.Challenge
         public void ConfigureServices(IServiceCollection services)
         {
             //PDR - AddDbContext 
-            services.AddDbContext<CodenationContext>(options => options.UseSqlServer(Configuration.GetConnectionString("ChallengeConn")));
+            //services.AddDbContext<CodenationContext>(options => options.UseSqlServer(Configuration.GetConnectionString("ChallengeConn")));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 

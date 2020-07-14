@@ -7,15 +7,18 @@ namespace Codenation.Challenge.Models
     {
         public UserConfig(EntityTypeBuilder<User> entityTypeBuilder)
         {
+            EntityTypeBuilder = entityTypeBuilder;
         }
+
+        public EntityTypeBuilder<User> EntityTypeBuilder { get; }
 
         public void Configure(EntityTypeBuilder<User> user)
         {
             user.ToTable("user");
 
-            user.HasKey(u => u.User_Id);
+            user.HasKey(u => u.Id);
 
-            user.Property(u => u.User_Id).HasColumnName("id").IsRequired();
+            user.Property(u => u.Id).HasColumnName("id").IsRequired();
             user.Property(u => u.Full_Name).HasColumnName("full_name").HasMaxLength(100).IsRequired();
             user.Property(u => u.Email).HasColumnName("email").HasMaxLength(100).IsRequired();
             user.Property(u => u.Nickname).HasColumnName("nickname").HasMaxLength(50).IsRequired();

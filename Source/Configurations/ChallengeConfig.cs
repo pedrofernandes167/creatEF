@@ -7,15 +7,18 @@ namespace Codenation.Challenge.Models
     {
         public ChallengeConfig(EntityTypeBuilder<Challenge> entityTypeBuilder)
         {
+            EntityTypeBuilder = entityTypeBuilder;
         }
+
+        public EntityTypeBuilder<Challenge> EntityTypeBuilder { get; }
 
         public void Configure(EntityTypeBuilder<Challenge> chal)
         {
             chal.ToTable("challenge");
 
-            chal.HasKey(c => c.Challenge_Id);
+            chal.HasKey(c => c.Id);
 
-            chal.Property(c => c.Challenge_Id).HasColumnName("id").IsRequired();
+            chal.Property(c => c.Id).HasColumnName("id").IsRequired();
             chal.Property(c => c.Name).HasColumnName("Name").HasMaxLength(100).IsRequired();
             chal.Property(c => c.Slug).HasColumnName("Slug").HasMaxLength(50).IsRequired();
             chal.Property(c => c.Created_At).HasColumnName("Created_at").IsRequired();
