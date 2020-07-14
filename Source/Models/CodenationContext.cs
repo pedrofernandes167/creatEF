@@ -19,13 +19,12 @@ namespace Codenation.Challenge.Models
 
         protected override void OnModelCreating(ModelBuilder mb)
         {
-            base.OnModelCreating(mb);
-            new UserConfig(mb.Entity<User>());
-            new SubmissionConfig(mb.Entity<Submission>());
-            new ChallengeConfig(mb.Entity<Challenge>());
-            new AccelerationConfig(mb.Entity<Acceleration>());
-            new CompanyConfig(mb.Entity<Company>());
-            new CandidateConfig(mb.Entity<Candidate>());
+            mb.ApplyConfiguration(new UserConfig());
+            mb.ApplyConfiguration(new SubmissionConfig());
+            mb.ApplyConfiguration(new ChallengeConfig());
+            mb.ApplyConfiguration(new AccelerationConfig());
+            mb.ApplyConfiguration(new CompanyConfig());
+            mb.ApplyConfiguration(new CandidateConfig());
         }
     }
 }

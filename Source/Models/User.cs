@@ -12,7 +12,7 @@ namespace Codenation.Challenge.Models
         public string Password { get; set; }
         public DateTime Created_At { get; set; }
 
-        public ICollection<Candidate> Candidates { get; set; }
-        public ICollection<Submission> Submissions { get; set; }
+        public List<Candidate> Candidates { get; set; }
+        public List<Submission> Submissions { get; set; }
     }
 }

@@ -10,6 +10,6 @@ namespace Codenation.Challenge.Models
         public string Slug { get; set; }
         public DateTime Created_At { get; set; }
 
-        public ICollection<Candidate> Candidates { get; set; }
+        public List<Candidate> Candidates { get; set; }
     }
 }

@@ -10,7 +10,7 @@ namespace Codenation.Challenge.Models
         public string Slug { get; set; }
         public DateTime Created_At { get; set; }
 
-        public ICollection<Acceleration> Accelerations { get; set; }
-        public ICollection<Submission> Submissions { get; set; }
+        public List<Acceleration> Accelerations { get; set; }
+        public List<Submission> Submissions { get; set; }
     }
 }
