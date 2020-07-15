@@ -3,12 +3,12 @@ using Xunit;
 
 namespace Codenation.Challenge
 {
-    public sealed class CompanyModelTest : ModelBaseTest
+    public sealed class ChallengeModelTest : ModelBaseTest
     {
-        public CompanyModelTest() : base(new CodenationContext())
+        public ChallengeModelTest() : base(new CodenationContext())
         {
-            Model = "Codenation.Challenge.Models.Company";
-            Table = "company";
+            Model = "Codenation.Challenge.Models.Challenge";
+            Table = "challenge";
         }
 
         [Fact]
