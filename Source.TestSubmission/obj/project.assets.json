@@ -7188,9 +7188,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HOFFMANN\\codenation\\csharp-7\\Source.TestSubmission\\Source.TestSubmission.csproj",
-      "projectName": "Source.TestSubmission",
-      "projectPath": "C:\\Users\\HOFFMANN\\codenation\\csharp-7\\Source.TestSubmission\\Source.TestSubmission.csproj",
+      "projectUniqueName": "C:\\Users\\HOFFMANN\\codenation\\csharp-7\\Source.TestSubmission\\Source.Test.csproj",
+      "projectName": "Source.Test",
+      "projectPath": "C:\\Users\\HOFFMANN\\codenation\\csharp-7\\Source.TestSubmission\\Source.Test.csproj",
       "packagesPath": "C:\\Users\\HOFFMANN\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\HOFFMANN\\codenation\\csharp-7\\Source.TestSubmission\\obj\\",
       "projectStyle": "PackageReference",
